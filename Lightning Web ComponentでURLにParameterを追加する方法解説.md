@@ -250,7 +250,7 @@ getUrlParamValue(url, key) {
 }
 ```
 
-図
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/246162/facb2ccc-a73d-142e-4a68-c0352ab52784.png)
 
 とすると、この様に取得することができる。
 調べた限りこれが一番簡単なParameterを取得する方法かなと思うが、もし他の良い方法があれば教えて欲しいです。
