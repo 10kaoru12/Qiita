@@ -237,6 +237,24 @@ this.pageRefで設定したページに飛ぶがtypeがいくつかあるので�
 c__を付ければparameterとして認識する
 parameterの値はstringでないと認識しない
 
+## （追記）付加されたQuery Parameterを取得する方法
+
+```js
+connectedCallback() {
+    const param = 'c__flag';
+    const paramValue = this.getUrlParamValue(window.location.hrefwindow.location.href, param);
+}
+
+getUrlParamValue(url, key) {
+    return new URL(url).searchParams.get(key);
+}
+```
+
+図
+
+とすると、この様に取得することができる。
+調べた限りこれが一番簡単なParameterを取得する方法かなと思うが、もし他の良い方法があれば教えて欲しいです。
+
 ## 参考になるサイト
 
 - [navigationについての公式ドキュメント]<https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.use_navigate_basic>
