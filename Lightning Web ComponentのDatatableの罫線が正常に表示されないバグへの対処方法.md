@@ -71,7 +71,7 @@ export default class Qiita_sample_code_2 extends LightningElement {
 }
 ```
 
-2 のソース
+2のソース
 
 ```html
 <template>
@@ -140,16 +140,17 @@ export default class Qiita_sample_code_2 extends LightningElement {
 ## ソリューション
 
 1. この場合の問題点は、x軸方向にスクロールした場合にのみ発生するので、そもそもスクロールしないようなdatatableであればLightning Web Component標準のdatatableを使用して良い
-
 例としては、以下のような場合である。
-
 <img width="839" alt="スクリーンショット 2020-02-13 19.52.19.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/246162/11cb5adc-a0ab-8b86-4888-08991ac90e68.png">
-
 だが、以下のようにカラムが増えすぎてスクロールしないと見れないような場合は他の手段を考えなければならない。
-
-<img width="839" alt="スクリーンショット 2020-02-13 19.52.19.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/246162/11cb5adc-a0ab-8b86-4888-08991ac90e68.png">
+<img width="839" alt="スクリーンショット 2020-02-14 13.19.08.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/246162/fcfd7aa6-753f-9060-36d4-098ea829bbf3.png">
 
 2. Lightning Design System(slds)のdatatableを使う
+その方法を以下に記す。
+
+## lightning design systemのdatatableを使う方法
+
+実演とソースコードを記す。
 
 ## 実演
 
