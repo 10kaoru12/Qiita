@@ -1,0 +1,4 @@
+# 概要
+
+[ApexでBlobからStringに変換しようとした時に起こったバグとその対処](https://qiita.com/10kaoru12/items/1594a28f5e15b3e02c15)
+の記事で紹介した暗号化したBlobをbase64形式でString化してURLパラメーターに付与、その後別ページでパラメーターを受け取り

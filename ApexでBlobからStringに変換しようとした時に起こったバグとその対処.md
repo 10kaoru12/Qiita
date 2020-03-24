@@ -53,6 +53,6 @@ Crypto.decryptWithManagedIVでdecryptoしたBlobをStringに変換すること�
 
 ## 参考文献
 
-- [How to deal with 'BLOB is not a valid UTF-8 string' error](ttps://developer.salesforce.com/forums/?id=906F00000008mCnIAI)
+- [How to deal with 'BLOB is not a valid UTF-8 string' error](https://developer.salesforce.com/forums/?id=906F00000008mCnIAI)
 - [Getting error of 'BLOB is not a valid UTF-8 string'.](https://www.forcetalks.com/salesforce-topic/getting-error-of-blob-is-not-a-valid-utf-8-string/)
 - [セキュリティを考慮した、可逆的暗号化の相互運用の仕組みを実現する方法(Salesforce編)](https://web.plus-idea.net/2017/04/salesforce-security-crypto/)
