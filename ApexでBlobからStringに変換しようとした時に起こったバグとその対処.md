@@ -2,7 +2,7 @@
 
 ある文字列を暗号化してURLにパラメーターとして付与し、別ページでURLのパラメーターを受け取り復号化したいという状況
 
-この際に、StringからBLOb(Binary Large Object)に変換する際、エンコード方式に制限があるようで、
+この際に、BLOb(Binary Large Object)からStringに変換する際、エンコード方式に制限があるようで、
 「BLOB is not a valid UTF-8 string」
 というエラーが出た。
 その時の対処について記載する。
@@ -47,5 +47,12 @@
 
 ## 原因の推測
 
-generateAesKeyで生成されるBlob内にtoStringで変換するutf-8の形式に対応していない文字列が含まれているから変換できないのかなと推測しておりますが、
-このエラーの原因がわかる方いらっしゃいましたらコメントなどで教えていただけると嬉しいです。
+個人的には、generateAesKeyで生成されるBlob内にtoStringで変換するutf-8の形式に対応していない文字列が含まれているから変換できないのかな？と考えております。
+Crypto.decryptWithManagedIVでdecryptoしたBlobをStringに変換することはできているので、generateAesKeyで生成されたBlobがutf-8で対応できない文字列を含んでいるのでできていないと考えました。
+このエラーの原因がわかる方、推測できる方いらっしゃいましたらコメントなどで教えていただけると嬉しいです。
+
+## 参考文献
+
+- [How to deal with 'BLOB is not a valid UTF-8 string' error](ttps://developer.salesforce.com/forums/?id=906F00000008mCnIAI)
+- [Getting error of 'BLOB is not a valid UTF-8 string'.](https://www.forcetalks.com/salesforce-topic/getting-error-of-blob-is-not-a-valid-utf-8-string/)
+- [セキュリティを考慮した、可逆的暗号化の相互運用の仕組みを実現する方法(Salesforce編)](https://web.plus-idea.net/2017/04/salesforce-security-crypto/)
