@@ -23,6 +23,12 @@
     system.debug(toStringData);
 ```
 
+## 原因部分
+
+```java
+    String encodedKey=key.toString();
+```
+
 ## 対処したソースコード
 
 ```java
