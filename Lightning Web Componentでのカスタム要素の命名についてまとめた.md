@@ -57,3 +57,8 @@ Compilation Failure
 
 ## まとめ
 コンポーネントの名前に大文字を連続させると面倒なことになるので小文字で完結できるような命名規則にするといい
+
+## 参考
+- [Lightning Web コンポーネントの作成](https://trailhead.salesforce.com/ja/content/learn/modules/lightning-web-components-for-aura-developers/compose-components?trail_id=build-lightning-web-components)
+- [コンポーネントのHTMLファイル](https://developer.salesforce.com/docs/component-library/documentation/ja-jp/lwc/lwc.create_components_html_file)
+- [コンポーネントの名前空間](https://developer.salesforce.com/docs/component-library/documentation/ja-jp/lwc/lwc.create_components_namespace)
