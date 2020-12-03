@@ -5,8 +5,7 @@ Lightning Web Componentで開発していて、カスタム要素を使用する
 ## エラー内容
 
 ```powershell-interactive
-Compilation Failure 
-  コンポーネント名.js:0,0: LWC1010: Failed to resolve entry for module
+No MODULE named markup://salesforceから認識されているコンポーネント found : [markup://それに近そうなコンポーネント]
 ```
 
 ## カスタム要素の命名
